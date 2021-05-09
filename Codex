@@ -1,0 +1,16 @@
+def arithmetic_arranger(problems, answer=False):
+  if len(problems) > 5:
+    return "Error: Too many problems."
+  for i in problems:
+      if i == '*' or '/':
+          return "Error: Operator must be '+' or '-'."
+  for j in problems(len - 1):
+      if j != int:
+          return "Error: Numbers must only contain digits."
+      elif len(j) > 4:
+          return "Error: Numbers cannot be more than four digits."
+
+  arranged_problems = problems[i] + "\n" + problems[i, j].rjust + problems[i, j].str("    ") + problems[j][:-4]
+  return arranged_problems
+
+print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"], True))
